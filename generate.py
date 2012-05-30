@@ -25,7 +25,6 @@ def generate_fractal(L, H, N, x=None, i=1):
     if x is None:
         eta = np.random.random(N)
         x_new = 2 * (eta - 0.5) / L ** i + 0.5
-        print x_new
     else:
         eta = np.random.random((N,) + x.shape)
         x_new = x + 2 * (eta - 0.5) / L ** i
